@@ -52,7 +52,7 @@ namespace ElevenNote.MobileApp
 
                     // If login was successful, send them to the notes list page.
                     pleaseWait.IsRunning = false;
-                    await Navigation.PushAsync(new NotesPage(), true);
+                    await Navigation.PushAsync(new NotesPages(), true);
 
                 }, TaskScheduler.FromCurrentSynchronizationContext());
         }
